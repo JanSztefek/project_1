@@ -1,0 +1,102 @@
+.mh{
+    padding-bottom: 0;
+}
+
+@keyframes opacitanimate {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        left: 0;
+        bottom: 0px;
+    }
+}
+
+.presentation{
+    margin: 125px 0 0 0;
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &__about{
+        max-width: 486px;
+        opacity: 0;
+        animation-name: opacitanimate;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        position: relative;
+        left: -100%;
+        & > p{
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+
+    }
+    &__photos{
+        position: relative;
+        text-align: center;
+        opacity: 0;
+        bottom: -50px;
+        animation-name: opacitanimate;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
+        position: relative;
+
+        &--profile{ 
+            position: relative;
+            right: -100px;
+            height: 100%
+        }
+        img{
+            &:nth-child(2){
+                position: absolute;
+                left: -100px;
+                @media screen and (max-width: 768px){
+                    top: 0;
+                    left: -20px;
+                    width: 35vw;
+                }
+            }
+            &:nth-child(3){
+                position: absolute;
+                right: 15px;
+                top: 30px;
+                @media screen and (max-width: 768px){   
+                    width: 35vw;
+                }
+            }
+            &:nth-child(4){
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                @media screen and (max-width: 768px){   
+                    width: 35vw;
+                }
+            }
+        }
+    }
+
+    &__stats{
+        display: flex;
+        align-items: center;
+        margin-top: 95px;
+        & > div{
+            width: 160px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &-number{
+            line-height: 1;
+            color: $blue;
+            font-size: 48px;
+            font-weight: 700;
+        }
+        &-description{
+            color: $blue;
+            font-size: 18px;   
+        }
+    }
+}

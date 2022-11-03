@@ -1,0 +1,50 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0;
+}
+
+.font{
+
+    &--primary{
+        font-size: 70px;
+        color: $blue;
+        font-weight:  700;
+        line-height: 1.17;
+    }
+    
+    &--secondary{
+        color: $gray;
+        font-size: 16px;
+        line-height: 2;
+        font-weight: 400;
+    }
+    
+    &--third{
+        line-height: 1.5;
+        font-weight: 600;
+        color: $black;
+        font-size: 24px;
+    }
+    &--quad{
+        color: white;
+        font-size: 16px;
+        line-height: 2;
+        font-weight: 400;
+    }
+}
+
+h2, h4, h5{
+    font-size: 45px;
+    line-height: 1.25;
+    color: $blue;
+}
+
+
+h3{
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 500;
+}

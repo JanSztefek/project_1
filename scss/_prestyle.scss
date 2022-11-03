@@ -1,0 +1,86 @@
+$main-padding: 40px;
+
+body{
+    margin: 0;
+}
+
+.row, .flex{
+    display: flex;
+}
+
+a{
+    text-decoration: unset;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+.dg{    
+    &-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.justify{
+    &-between{
+        justify-content: space-between;
+    }
+
+    &-flexend{
+        justify-content: flex-end;
+    }
+}
+
+.align{
+    &-center{
+        align-items: center;
+    }
+    &-flexend{
+        align-items: flex-end;
+    }
+}
+
+body > div:not(.mainscreen){
+    background-color: white;
+}
+
+.main{
+    background-image: url('/img/background.jpg');
+    background-size: cover;
+    background-position: top left;
+}
+
+.mainscreen{
+    overflow: hidden;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-image: url('/img/circlebgc.png');
+}
+
+
+.container{
+    padding: $main-padding;
+    @media screen and (max-width: 768px){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.buttons__container{
+    @media screen and (max-width: 768px){   
+        justify-content: flex-start;
+        gap: 30px;
+    }
+}

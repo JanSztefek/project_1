@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="" />
+    <meta name="keyword" content="" />
+    <meta name="author" content="">
+    <meta name="robots" content="max-image-preview:large">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+   
+    <title>ss</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/min/style.min.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body class="main">
+    <div class="mainscreen">
+        <div class="container mh">
+            <header class="header" x-data="{menuOpen : false}" @click.outside="menuOpen = false">
+                <div class="menu" x-bind:class="menuOpen ? 'active' : ''">
+                    <a class="menu__item active" href="#aktuality">Domů</a>
+                    <a class="menu__item" href="#aktuality">Aktuality</a>
+                    <a class="menu__item" href="#sluzby">Služby</a>
+                    <a class="menu__item" href="#kariera">Kariéra</a>
+                    <a class="menu__item" href="#kariera">Kontakt</a>
+                </div>
+                <a href="/" class="header__logo">Název</a>
+                <div class="menu-right">
+                    <a href="tel:+">+420 111 111 111</a>
+                    <a href="tel:+">prace@111.cz</a>
+                </div>
+                <button class="btn--hamburger" x-bind:class="menuOpen ? 'active' : ''" @click="menuOpen = ! menuOpen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
+            <main>
+                <div class="dg-2 presentation">
+                    <div class="presentation__about">
+                        <h1 class="font--primary">Pojďme začít něco velkého společně!</h1>
+                        <p class="font--secondary">Ke každé vizi vedou schody. Důležité je v životě najít ty své tak, ať vychází z vás.</p>
+                        <div class="flex gap-10" style="gap: 20px;">
+                            <a href="#sluzby" class="btn--secondary"><span>Služby</span></a>
+                            <a href="#sluzby" class="btn--primary"><span>Spolupráce</span></a>
+                        </div>
+                        <div class="presentation__stats">
+                            <div>
+                                <p class="presentation__stats-number" id="count1">0+</p>
+                                <p class="presentation__stats-description">Let <br> Zkušeností</p>
+                            </div>
+                            <div>
+                                <p class="presentation__stats-number" id="count2">0</p>
+                                <p class="presentation__stats-description">Dokončených <br> zásad</p>
+                            </div>
+                            <div>
+                                <p class="presentation__stats-number" id="count3">0%</p>
+                                <p class="presentation__stats-description">Klientská <br> Spokojenost</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="presentation__photos">
+                        <img src="img/01/user-image.png" alt="" class="presentation__photos--profile">
+                    </div>
+                </div>
+            </main>    
+        </div>
+    </div>
+    
+    <div class="submain">
+        <div class="container">
+            <div class="submain__card">
+                <p class="submain__card-number">01</p>
+                <p class="submain__card-name">Nezávazná schůzka</p>
+                <p class="submain__card-description font--secondary">Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            
+            <div class="submain__card">
+                <p class="submain__card-number">02</p>
+                <p class="submain__card-name">Návrh řešení</p>
+                <p class="submain__card-description font--secondary">Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="submain__card">
+                <p class="submain__card-number">03</p>
+                <p class="submain__card-name">Realizace</p>
+                <p class="submain__card-description font--secondary">Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="benefits">
+        <div class="container">
+            <div class="path">
+                <div class="path-item">
+                    <img src="/img/icons/mission.svg" alt="">
+                    <p class="path-name">Vize</p>
+                </div>
+                <div class="path-item">
+                    <img src="/img/icons/goal.svg" alt="">
+                    <p class="path-name">Mise</p>
+                </div>
+                <div class="path-item">
+                    <img src="/img/icons/vission.svg" alt="">
+                    <p class="path-name">Cíle</p>
+                </div>
+            </div>
+            <div>
+                <img src="/img/benefits.webp" class="benefits-mainphoto" alt="">
+            </div>
+            <div class="benefits-content">
+                <h2>Jaký postup stojí za našimi výsledky?</h2>
+                <p class="font--secondary">Pracujeme nezávisle a soustředíme se na to, aby naše služby měly pro klienty tu největší <b>přidanou hodnotu</b>. Podpisem smlouvy pro nás <b>obchod nekončí!</b> Největší důraz klademe na servis a <b>dlouhodobou spolupráci s klientem.</b></p>
+                <div class="flex">
+                    <a href="#sluzby" class="btn--secondary"><span>Mám zájem</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="left">
+                    <h3>Vysoce kvalitní služby a inovativní řešení pro spolehlivý růst.</h3>
+                    <p class="font--quad">Obraťte se na nás s individuálními potřebami nebo s tím, co vás zajímá. Vždy se Vám budeme snažit vyjít vstříc, poradit a najít společné řešení.</b></p>
+                </div>
+                <div class="right">
+                    <a href="#sluzby" class="btn--primary"><span>Kontakt</span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="services" x-data="{obcan : true, podnikatel : false}">
+        <div class="container">
+            <div class="services__top">
+                <h4>Služby k zlepšení vašeho podnikání nebo osobního života</h4>
+                <div class="services__top-right">
+                    <div class="flex">
+                        <button class="btn--transparent" :class="obcan ? 'active' : ''" @click="podnikatel = false, obcan = true">Občané</button>
+                        <button class="btn--transparent" :class="podnikatel ? 'active' : ''"  @click="podnikatel = true, obcan = false">Podnikatelé</button>
+                    </div>
+                    <p class="font--secondary">Popis služeb pro skupinu ( nějaký lákavý text )</p>
+                </div>
+            </div>
+        
+            <div class="services__content" :class="obcan ? 'active' : ''">
+                <div class="services__content-item">
+                    <img src="/img/icons/mission.svg" alt="">
+                    <p class="services__content-item-name">Bankovní služby</p>
+                    <p class="services__content-item-items">Osobní&nbsp;účty, Spořící&nbsp;účty</p>
+                </div>
+                <div class="services__content-item">
+                    <img src="/img/icons/mission.svg" alt="">
+                    <p class="services__content-item-name">Investice a spoření</p>
+                    <p class="services__content-item-items">Podílové&nbsp;fondy, Dluhopisy, Drahé&nbsp;kovy, Stavební&nbsp;spoření, Doplňkové&nbsp;penzijní&nbsp;spoření</p>
+                
+                </div>
+                <div class="services__content-item">
+                    <img src="/img/icons/mission.svg" alt="">
+                    <p class="services__content-item-name">Pojíštění</p>
+                    <p class="services__content-item-items">Nemovitosti&nbsp;a&nbsp;domácnosti, Občanské&nbsp;odpovědnosti, Zaměstnanecké&nbsp;odpovědnosti, Odpovědnosti&nbsp;z&nbsp;provozu&nbsp;vozidla, Havarijní&nbsp;pojištění, Životní a&nbsp;úrazové, Cestovní&nbsp;a&nbsp;další</p>
+            
+
+                </div>
+                <div class="services__content-item">
+                    <img src="/img/icons/mission.svg" alt="">
+                    <p class="services__content-item-name">Úvěry</p>
+                    <p class="services__content-item-items">Spotřebitelské&nbsp;úvěry, Hypoteční&nbsp;úvěry, Úvěry&nbsp;ze&nbsp;stavebního&nbsp;spoření, Revolvingové&nbsp;úvěry, Kreditní&nbsp;karty, Kontokorent</p>
+
+                </div>
+                <div class="services__content-item">
+                    <img src="/img/icons/mission.svg" alt="">
+                    <p class="services__content-item-name">Školení</p>
+                    <p class="services__content-item-items">Finanční&nbsp;gramotnosti, Plánování</p>
+                </div>
+            </div>
+
+            <div class="services__content" :class="podnikatel ? 'active' : ''">
+                <div class="services__content-item">
+                    <img src="/img/icons/mission.svg" alt="">
+                    <p class="services__content-item-name">Bankovní služby</p>
+                    <p class="services__content-item-items">Podnikatelské&nbsp;účty</p>
+                </div>
+                <div class="services__content-item">
+                    <img src="/img/icons/mission.svg" alt="">
+                    <p class="services__content-item-name">Investice a spoření</p>
+                    <p class="services__content-item-items">Volné firemní prostředky v návaznosti na priority a budoucnost společnosti</p>
+                </div>
+                <div class="services__content-item">
+                    <img src="/img/icons/mission.svg" alt="">
+                    <p class="services__content-item-name">Pojíštění</p>
+                    <p class="services__content-item-items">Nemovitosti, Provozu&nbsp;a&nbsp;strojů, Podnikatelské&nbsp;odpovědnosti, Flotilové&nbsp;pojištění&nbsp;vozidel, Životní&nbsp;a&nbsp;úrazové pro zaměstnance, Cestovní a další</p>
+
+                </div>
+                <div class="services__content-item">
+                    <img src="/img/icons/mission.svg" alt="">
+                    <p class="services__content-item-name">Úvěry</p>
+                    <p class="services__content-item-items">Hypoteční&nbsp;úvěry, Revolvingové&nbsp;úvěry, Provozní&nbsp;úvěry</p>
+
+                </div>
+                <div class="services__content-item">
+                    <img src="/img/icons/mission.svg" alt="">
+                    <p class="services__content-item-name">Školení</p>
+                    <p class="services__content-item-items">Finanční&nbsp;gramotnosti, Plánování</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__posts">
+                <p class="name">Nedávné aktuality</p>
+                <a class="footer__posts-item">
+                    <img src="/img/post-thumb.png" alt="" width="80px" height="80px">
+                    <div class="footer__posts-content">
+                        <p class="name">Non sodales neque sodales uy etiam sit. A pellentesque sit amet porttitor.</p>
+                        <p class="date">17. ledna 2022</p>
+                    </div>
+                </a>
+            </div>
+            <div class="footer__right">
+                <div class="footer__right-column">
+                    <p class="name">Název</p>
+                    <a href="">odkaz1</a>
+                    <a href="">odkaz2</a>
+                    <a href="">odkaz3</a>
+                </div>
+                <div class="footer__right-column">
+                    <p class="name">Název</p>
+                    <a href="">odkaz1</a>
+                    <a href="">odkaz2</a>
+                    <a href="">odkaz3</a>
+                </div>
+                <div class="footer__right-column">
+                    <p class="name">Název</p>
+                    <a href="">odkaz1</a>
+                    <a href="">odkaz2</a>
+                    <a href="">odkaz3</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,49 @@
+.benefits{
+    padding-top: 120px;
+    .container{
+        display: grid;
+        grid-template-columns: 210px 1fr 500px;
+        gap: 60px;
+    }
+    &-mainphoto{
+        width: 100%;
+    }
+
+    .path{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        &-item{
+            display: flex;
+            background-color: white;
+            box-shadow: 15px 16px 20px 0px rgba(203, 208, 215, 0.64);
+            flex-direction: column;
+            text-align: center;
+            width: 210px;
+            height: 210px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 50%;
+            }
+        }
+
+        &-name{
+            font-weight: 600;
+            color: $blue;
+            font-size: 20px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+    }
+    &-content{
+        & > p{
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+    }
+}
